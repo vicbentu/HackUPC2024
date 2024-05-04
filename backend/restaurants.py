@@ -1,6 +1,7 @@
 import json
 
-RESTAURANTS_JSON = 'dataset/restaurants.json'
+RESTAURANTS_JSON = "dataset/restaurants.json"
+
 
 class Restaurants:
     def __init__(self):
@@ -10,4 +11,8 @@ class Restaurants:
         return self.restaurants
 
     def getRestaurantsInCity(self, city):
-        return [restaurant['restaurant ID'] for restaurant in self.restaurants if restaurant['city'] == city]
+        return [
+            restaurant["restaurant ID"]
+            for restaurant in self.restaurants
+            if restaurant["city"]["name"] == city
+        ]

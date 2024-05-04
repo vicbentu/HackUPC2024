@@ -1,58 +1,237 @@
 [
     {
         "restaurant ID": 0,
-        "name": "Hood-Gonzales",
+        "name": "Harris, Mcbride and Yu",
         "category": [
-            "european",
-            "spanish"
+            "italian",
+            "mediterranean"
         ],
         "city": {
-            "name": "Zurich",
+            "name": "Brussels",
             "lat_range": [
-                47.3,
-                47.4
+                50.8,
+                50.9
             ],
             "long_range": [
-                8.5,
-                8.7
+                4.3,
+                4.5
             ]
         },
-        "latitude": 47.31260366712794,
-        "longitude": 8.545299077903302,
+        "latitude": 50.830558634342715,
+        "longitude": 4.322421380184341,
         "opening_hours": {
-            "open": 9,
-            "close": 23
+            "open": 10,
+            "close": 19
         }
     },
     {
         "restaurant ID": 1,
-        "name": "Cisneros Ltd",
+        "name": "Bennett, Jennings and Heath",
+        "category": [
+            "latin",
+            "mexican"
+        ],
+        "city": {
+            "name": "Dublin",
+            "lat_range": [
+                53.3,
+                53.4
+            ],
+            "long_range": [
+                -6.3,
+                -6.1
+            ]
+        },
+        "latitude": 53.31659490818845,
+        "longitude": -6.237044026606397,
+        "opening_hours": {
+            "open": 10,
+            "close": 22
+        }
+    },
+    {
+        "restaurant ID": 2,
+        "name": "Lee, Garcia and Rose",
         "category": [
             "austriac",
             "european",
             "spanish"
         ],
         "city": {
-            "name": "Rome",
+            "name": "Vienna",
             "lat_range": [
-                41.8,
-                41.9
+                48.1,
+                48.3
             ],
             "long_range": [
-                12.4,
-                12.5
+                16.3,
+                16.6
             ]
         },
-        "latitude": 41.84364539983534,
-        "longitude": 12.480827983481491,
+        "latitude": 48.287303326736414,
+        "longitude": 16.48898505646176,
         "opening_hours": {
-            "open": 11,
+            "open": 8,
+            "close": 22
+        }
+    },
+    {
+        "restaurant ID": 3,
+        "name": "Miller, Shelton and Hicks",
+        "category": [
+            "france",
+            "european",
+            "spanish"
+        ],
+        "city": {
+            "name": "Brussels",
+            "lat_range": [
+                50.8,
+                50.9
+            ],
+            "long_range": [
+                4.3,
+                4.5
+            ]
+        },
+        "latitude": 50.80355272203721,
+        "longitude": 4.400204446211218,
+        "opening_hours": {
+            "open": 8,
             "close": 19
         }
     },
     {
-        "restaurant ID": 2,
-        "name": "Ramirez-Everett",
+        "restaurant ID": 4,
+        "name": "Evans, Robinson and Cohen",
+        "category": [
+            "austriac"
+        ],
+        "city": {
+            "name": "Amsterdam",
+            "lat_range": [
+                52.3,
+                52.5
+            ],
+            "long_range": [
+                4.7,
+                5.0
+            ]
+        },
+        "latitude": 52.49839529764025,
+        "longitude": 4.881836295154066,
+        "opening_hours": {
+            "open": 11,
+            "close": 22
+        }
+    },
+    {
+        "restaurant ID": 5,
+        "name": "Foster-Hughes",
+        "category": [
+            "european",
+            "spanish",
+            "portuguese"
+        ],
+        "city": {
+            "name": "Munich",
+            "lat_range": [
+                48.1,
+                48.2
+            ],
+            "long_range": [
+                11.4,
+                11.7
+            ]
+        },
+        "latitude": 48.140478372087024,
+        "longitude": 11.692565895345297,
+        "opening_hours": {
+            "open": 10,
+            "close": 19
+        }
+    },
+    {
+        "restaurant ID": 6,
+        "name": "Gonzalez Group",
+        "category": [
+            "european",
+            "spanish",
+            "portuguese"
+        ],
+        "city": {
+            "name": "Vienna",
+            "lat_range": [
+                48.1,
+                48.3
+            ],
+            "long_range": [
+                16.3,
+                16.6
+            ]
+        },
+        "latitude": 48.16042182310642,
+        "longitude": 16.355978409799892,
+        "opening_hours": {
+            "open": 8,
+            "close": 23
+        }
+    },
+    {
+        "restaurant ID": 7,
+        "name": "Sutton PLC",
+        "category": [
+            "tapes",
+            "spanish",
+            "european"
+        ],
+        "city": {
+            "name": "Barcelona",
+            "lat_range": [
+                41.3,
+                41.5
+            ],
+            "long_range": [
+                2.1,
+                2.3
+            ]
+        },
+        "latitude": 41.39604550451745,
+        "longitude": 2.252281905394269,
+        "opening_hours": {
+            "open": 9,
+            "close": 18
+        }
+    },
+    {
+        "restaurant ID": 8,
+        "name": "Cline-Campbell",
+        "category": [
+            "mediterranean",
+            "spanish",
+            "portuguese"
+        ],
+        "city": {
+            "name": "Berlin",
+            "lat_range": [
+                52.5,
+                52.6
+            ],
+            "long_range": [
+                13.3,
+                13.5
+            ]
+        },
+        "latitude": 52.53645228690489,
+        "longitude": 13.348248394324902,
+        "opening_hours": {
+            "open": 10,
+            "close": 23
+        }
+    },
+    {
+        "restaurant ID": 9,
+        "name": "Valentine Group",
         "category": [
             "austriac",
             "european"
@@ -68,18 +247,316 @@
                 13.5
             ]
         },
-        "latitude": 52.55062018160693,
-        "longitude": 13.360396150248748,
+        "latitude": 52.50291138538011,
+        "longitude": 13.30582094416544,
         "opening_hours": {
-            "open": 9,
+            "open": 8,
+            "close": 21
+        }
+    },
+    {
+        "restaurant ID": 10,
+        "name": "Stephens-Reid",
+        "category": [
+            "mexican"
+        ],
+        "city": {
+            "name": "Lisbon",
+            "lat_range": [
+                38.7,
+                38.8
+            ],
+            "long_range": [
+                -9.2,
+                -9.0
+            ]
+        },
+        "latitude": 38.77012839306018,
+        "longitude": -9.136329667859378,
+        "opening_hours": {
+            "open": 11,
+            "close": 23
+        }
+    },
+    {
+        "restaurant ID": 11,
+        "name": "Woods-Young",
+        "category": [
+            "pasta",
+            "mediterranean"
+        ],
+        "city": {
+            "name": "Barcelona",
+            "lat_range": [
+                41.3,
+                41.5
+            ],
+            "long_range": [
+                2.1,
+                2.3
+            ]
+        },
+        "latitude": 41.389354573624004,
+        "longitude": 2.2442601478367883,
+        "opening_hours": {
+            "open": 11,
             "close": 18
         }
     },
     {
-        "restaurant ID": 3,
-        "name": "Kelly-Thompson",
+        "restaurant ID": 12,
+        "name": "Fernandez-Lopez",
+        "category": [
+            "japanese",
+            "sushi",
+            "asian"
+        ],
+        "city": {
+            "name": "Budapest",
+            "lat_range": [
+                47.3,
+                47.5
+            ],
+            "long_range": [
+                19.0,
+                19.1
+            ]
+        },
+        "latitude": 47.44114756334308,
+        "longitude": 19.006470329265476,
+        "opening_hours": {
+            "open": 9,
+            "close": 23
+        }
+    },
+    {
+        "restaurant ID": 13,
+        "name": "Kelly-May",
+        "category": [
+            "japanese",
+            "sushi",
+            "asian"
+        ],
+        "city": {
+            "name": "Prague",
+            "lat_range": [
+                50.0,
+                50.1
+            ],
+            "long_range": [
+                14.3,
+                14.5
+            ]
+        },
+        "latitude": 50.07533675567635,
+        "longitude": 14.377848542744658,
+        "opening_hours": {
+            "open": 8,
+            "close": 20
+        }
+    },
+    {
+        "restaurant ID": 14,
+        "name": "Terrell, Wilson and Williams",
+        "category": [
+            "mexican"
+        ],
+        "city": {
+            "name": "Lisbon",
+            "lat_range": [
+                38.7,
+                38.8
+            ],
+            "long_range": [
+                -9.2,
+                -9.0
+            ]
+        },
+        "latitude": 38.74933940129237,
+        "longitude": -9.151180401143373,
+        "opening_hours": {
+            "open": 10,
+            "close": 19
+        }
+    },
+    {
+        "restaurant ID": 15,
+        "name": "Pittman, Harper and Salazar",
+        "category": [
+            "vegan"
+        ],
+        "city": {
+            "name": "Milan",
+            "lat_range": [
+                45.4,
+                45.5
+            ],
+            "long_range": [
+                9.1,
+                9.3
+            ]
+        },
+        "latitude": 45.43823241340193,
+        "longitude": 9.1631262089903,
+        "opening_hours": {
+            "open": 10,
+            "close": 19
+        }
+    },
+    {
+        "restaurant ID": 16,
+        "name": "Horn-Hester",
+        "category": [
+            "vegan"
+        ],
+        "city": {
+            "name": "Barcelona",
+            "lat_range": [
+                41.3,
+                41.5
+            ],
+            "long_range": [
+                2.1,
+                2.3
+            ]
+        },
+        "latitude": 41.43675156867523,
+        "longitude": 2.204938517225505,
+        "opening_hours": {
+            "open": 10,
+            "close": 23
+        }
+    },
+    {
+        "restaurant ID": 17,
+        "name": "Alexander-Cabrera",
+        "category": [
+            "pizza",
+            "italian"
+        ],
+        "city": {
+            "name": "Dublin",
+            "lat_range": [
+                53.3,
+                53.4
+            ],
+            "long_range": [
+                -6.3,
+                -6.1
+            ]
+        },
+        "latitude": 53.36140959578629,
+        "longitude": -6.104297669371845,
+        "opening_hours": {
+            "open": 11,
+            "close": 19
+        }
+    },
+    {
+        "restaurant ID": 18,
+        "name": "Miller Inc",
         "category": [
             "france",
+            "european",
+            "spanish"
+        ],
+        "city": {
+            "name": "Berlin",
+            "lat_range": [
+                52.5,
+                52.6
+            ],
+            "long_range": [
+                13.3,
+                13.5
+            ]
+        },
+        "latitude": 52.596110730050576,
+        "longitude": 13.49103419671073,
+        "opening_hours": {
+            "open": 8,
+            "close": 23
+        }
+    },
+    {
+        "restaurant ID": 19,
+        "name": "Chan-Phelps",
+        "category": [
+            "sushi"
+        ],
+        "city": {
+            "name": "Amsterdam",
+            "lat_range": [
+                52.3,
+                52.5
+            ],
+            "long_range": [
+                4.7,
+                5.0
+            ]
+        },
+        "latitude": 52.48163934006823,
+        "longitude": 4.778491759653017,
+        "opening_hours": {
+            "open": 11,
+            "close": 19
+        }
+    },
+    {
+        "restaurant ID": 20,
+        "name": "Neal-Ferguson",
+        "category": [
+            "latin"
+        ],
+        "city": {
+            "name": "Dublin",
+            "lat_range": [
+                53.3,
+                53.4
+            ],
+            "long_range": [
+                -6.3,
+                -6.1
+            ]
+        },
+        "latitude": 53.34822032428927,
+        "longitude": -6.152219288113559,
+        "opening_hours": {
+            "open": 11,
+            "close": 21
+        }
+    },
+    {
+        "restaurant ID": 21,
+        "name": "Hawkins-Weber",
+        "category": [
+            "italian",
+            "mediterranean",
+            "pasta"
+        ],
+        "city": {
+            "name": "Berlin",
+            "lat_range": [
+                52.5,
+                52.6
+            ],
+            "long_range": [
+                13.3,
+                13.5
+            ]
+        },
+        "latitude": 52.50879371847279,
+        "longitude": 13.429432185161565,
+        "opening_hours": {
+            "open": 9,
+            "close": 21
+        }
+    },
+    {
+        "restaurant ID": 22,
+        "name": "Hall, Valentine and Stewart",
+        "category": [
+            "austriac",
             "european",
             "spanish"
         ],
@@ -94,119 +571,20 @@
                 0.2
             ]
         },
-        "latitude": 51.50801737446376,
-        "longitude": 0.02454804380792569,
+        "latitude": 51.500473557053155,
+        "longitude": -0.03672552798597123,
         "opening_hours": {
-            "open": 10,
-            "close": 22
-        }
-    },
-    {
-        "restaurant ID": 4,
-        "name": "Austin Group",
-        "category": [
-            "european",
-            "spanish"
-        ],
-        "city": {
-            "name": "Florence",
-            "lat_range": [
-                43.7,
-                43.8
-            ],
-            "long_range": [
-                11.2,
-                11.4
-            ]
-        },
-        "latitude": 43.77795025533884,
-        "longitude": 11.300742657509161,
-        "opening_hours": {
-            "open": 10,
-            "close": 20
-        }
-    },
-    {
-        "restaurant ID": 5,
-        "name": "Mitchell-Turner",
-        "category": [
-            "japanese"
-        ],
-        "city": {
-            "name": "Rome",
-            "lat_range": [
-                41.8,
-                41.9
-            ],
-            "long_range": [
-                12.4,
-                12.5
-            ]
-        },
-        "latitude": 41.859336598505834,
-        "longitude": 12.463959253015629,
-        "opening_hours": {
-            "open": 11,
+            "open": 9,
             "close": 21
         }
     },
     {
-        "restaurant ID": 6,
-        "name": "Lee, Cook and Rodriguez",
+        "restaurant ID": 23,
+        "name": "Edwards, Mcdowell and Mccann",
         "category": [
+            "pasta",
             "mediterranean",
             "spanish"
-        ],
-        "city": {
-            "name": "Paris",
-            "lat_range": [
-                48.8,
-                49.1
-            ],
-            "long_range": [
-                2.2,
-                2.6
-            ]
-        },
-        "latitude": 48.94958398980364,
-        "longitude": 2.463372541767686,
-        "opening_hours": {
-            "open": 10,
-            "close": 19
-        }
-    },
-    {
-        "restaurant ID": 7,
-        "name": "Cruz, Walker and King",
-        "category": [
-            "italian",
-            "mediterranean",
-            "pasta"
-        ],
-        "city": {
-            "name": "Madrid",
-            "lat_range": [
-                40.3,
-                40.5
-            ],
-            "long_range": [
-                -3.8,
-                -3.6
-            ]
-        },
-        "latitude": 40.30465939208778,
-        "longitude": -3.712934178396919,
-        "opening_hours": {
-            "open": 9,
-            "close": 22
-        }
-    },
-    {
-        "restaurant ID": 8,
-        "name": "Torres and Sons",
-        "category": [
-            "asian",
-            "sushi"
         ],
         "city": {
             "name": "Dublin",
@@ -219,19 +597,18 @@
                 -6.1
             ]
         },
-        "latitude": 53.34911548847228,
-        "longitude": -6.236182992789928,
+        "latitude": 53.3470826215757,
+        "longitude": -6.154799063514548,
         "opening_hours": {
-            "open": 8,
-            "close": 20
+            "open": 9,
+            "close": 22
         }
     },
     {
-        "restaurant ID": 9,
-        "name": "Taylor-Hall",
+        "restaurant ID": 24,
+        "name": "Yang Group",
         "category": [
-            "sushi",
-            "japanese"
+            "france"
         ],
         "city": {
             "name": "Budapest",
@@ -244,116 +621,42 @@
                 19.1
             ]
         },
-        "latitude": 47.305516094697985,
-        "longitude": 19.0174454887894,
+        "latitude": 47.47510472495039,
+        "longitude": 19.048599956816,
         "opening_hours": {
             "open": 11,
-            "close": 18
-        }
-    },
-    {
-        "restaurant ID": 10,
-        "name": "King-Smith",
-        "category": [
-            "france"
-        ],
-        "city": {
-            "name": "Amsterdam",
-            "lat_range": [
-                52.3,
-                52.5
-            ],
-            "long_range": [
-                4.7,
-                5.0
-            ]
-        },
-        "latitude": 52.45823047300738,
-        "longitude": 4.921247389314193,
-        "opening_hours": {
-            "open": 8,
-            "close": 18
-        }
-    },
-    {
-        "restaurant ID": 11,
-        "name": "Reese-Case",
-        "category": [
-            "tapes"
-        ],
-        "city": {
-            "name": "Rome",
-            "lat_range": [
-                41.8,
-                41.9
-            ],
-            "long_range": [
-                12.4,
-                12.5
-            ]
-        },
-        "latitude": 41.89180047800719,
-        "longitude": 12.470938584182434,
-        "opening_hours": {
-            "open": 11,
-            "close": 18
-        }
-    },
-    {
-        "restaurant ID": 12,
-        "name": "Davis LLC",
-        "category": [
-            "japanese",
-            "sushi",
-            "asian"
-        ],
-        "city": {
-            "name": "Lisbon",
-            "lat_range": [
-                38.7,
-                38.8
-            ],
-            "long_range": [
-                -9.2,
-                -9.0
-            ]
-        },
-        "latitude": 38.74164027739304,
-        "longitude": -9.153264862729127,
-        "opening_hours": {
-            "open": 10,
-            "close": 18
-        }
-    },
-    {
-        "restaurant ID": 13,
-        "name": "Adams-Gibson",
-        "category": [
-            "japanese"
-        ],
-        "city": {
-            "name": "Prague",
-            "lat_range": [
-                50.0,
-                50.1
-            ],
-            "long_range": [
-                14.3,
-                14.5
-            ]
-        },
-        "latitude": 50.02275233151408,
-        "longitude": 14.438962328786918,
-        "opening_hours": {
-            "open": 10,
             "close": 23
         }
     },
     {
-        "restaurant ID": 14,
-        "name": "Cooper, Pena and Hamilton",
+        "restaurant ID": 25,
+        "name": "Smith and Sons",
         "category": [
-            "vegan"
+            "spanish"
+        ],
+        "city": {
+            "name": "Madrid",
+            "lat_range": [
+                40.3,
+                40.5
+            ],
+            "long_range": [
+                -3.8,
+                -3.6
+            ]
+        },
+        "latitude": 40.33180577360876,
+        "longitude": -3.7471072021406466,
+        "opening_hours": {
+            "open": 11,
+            "close": 23
+        }
+    },
+    {
+        "restaurant ID": 26,
+        "name": "Daniels Group",
+        "category": [
+            "france"
         ],
         "city": {
             "name": "Paris",
@@ -366,65 +669,243 @@
                 2.6
             ]
         },
-        "latitude": 49.06021864107674,
-        "longitude": 2.256826307441741,
+        "latitude": 48.92011335142572,
+        "longitude": 2.3561318952856674,
         "opening_hours": {
-            "open": 8,
-            "close": 21
+            "open": 9,
+            "close": 18
         }
     },
     {
-        "restaurant ID": 15,
-        "name": "Garcia, Hernandez and Hernandez",
+        "restaurant ID": 27,
+        "name": "Cowan, Morgan and Chavez",
         "category": [
-            "barbaque"
+            "asian",
+            "sushi",
+            "japanese"
         ],
         "city": {
-            "name": "Munich",
+            "name": "Amsterdam",
             "lat_range": [
-                48.1,
-                48.2
+                52.3,
+                52.5
             ],
             "long_range": [
-                11.4,
-                11.7
+                4.7,
+                5.0
             ]
         },
-        "latitude": 48.15833453043209,
-        "longitude": 11.529447247811468,
+        "latitude": 52.40352935308001,
+        "longitude": 4.95688356815515,
+        "opening_hours": {
+            "open": 11,
+            "close": 18
+        }
+    },
+    {
+        "restaurant ID": 28,
+        "name": "Hunter, Thompson and Collins",
+        "category": [
+            "tapes",
+            "spanish"
+        ],
+        "city": {
+            "name": "Lisbon",
+            "lat_range": [
+                38.7,
+                38.8
+            ],
+            "long_range": [
+                -9.2,
+                -9.0
+            ]
+        },
+        "latitude": 38.72546579783891,
+        "longitude": -9.03961199662158,
         "opening_hours": {
             "open": 8,
             "close": 22
         }
     },
     {
-        "restaurant ID": 16,
-        "name": "Flores and Sons",
+        "restaurant ID": 29,
+        "name": "Wiley-Lucero",
         "category": [
-            "asian",
-            "sushi"
+            "austriac",
+            "european"
         ],
         "city": {
-            "name": "Budapest",
+            "name": "Milan",
             "lat_range": [
-                47.3,
-                47.5
+                45.4,
+                45.5
             ],
             "long_range": [
-                19.0,
-                19.1
+                9.1,
+                9.3
             ]
         },
-        "latitude": 47.30034708704917,
-        "longitude": 19.065913673499704,
+        "latitude": 45.46440609157341,
+        "longitude": 9.299359715432882,
         "opening_hours": {
-            "open": 9,
-            "close": 21
+            "open": 11,
+            "close": 19
         }
     },
     {
-        "restaurant ID": 17,
-        "name": "Nguyen-Palmer",
+        "restaurant ID": 30,
+        "name": "Sanders Inc",
+        "category": [
+            "portuguese",
+            "european",
+            "mediterranean"
+        ],
+        "city": {
+            "name": "Barcelona",
+            "lat_range": [
+                41.3,
+                41.5
+            ],
+            "long_range": [
+                2.1,
+                2.3
+            ]
+        },
+        "latitude": 41.47090570538968,
+        "longitude": 2.16481048605593,
+        "opening_hours": {
+            "open": 9,
+            "close": 19
+        }
+    },
+    {
+        "restaurant ID": 31,
+        "name": "Young-Benson",
+        "category": [
+            "portuguese",
+            "european"
+        ],
+        "city": {
+            "name": "Madrid",
+            "lat_range": [
+                40.3,
+                40.5
+            ],
+            "long_range": [
+                -3.8,
+                -3.6
+            ]
+        },
+        "latitude": 40.32860031029231,
+        "longitude": -3.6702629291598607,
+        "opening_hours": {
+            "open": 11,
+            "close": 18
+        }
+    },
+    {
+        "restaurant ID": 32,
+        "name": "Strickland-Davis",
+        "category": [
+            "sushi",
+            "japanese"
+        ],
+        "city": {
+            "name": "Milan",
+            "lat_range": [
+                45.4,
+                45.5
+            ],
+            "long_range": [
+                9.1,
+                9.3
+            ]
+        },
+        "latitude": 45.496345865022285,
+        "longitude": 9.13034619600301,
+        "opening_hours": {
+            "open": 11,
+            "close": 23
+        }
+    },
+    {
+        "restaurant ID": 33,
+        "name": "Fitzgerald PLC",
+        "category": [
+            "spanish",
+            "tapes",
+            "european"
+        ],
+        "city": {
+            "name": "Prague",
+            "lat_range": [
+                50.0,
+                50.1
+            ],
+            "long_range": [
+                14.3,
+                14.5
+            ]
+        },
+        "latitude": 50.013627540321274,
+        "longitude": 14.311643441578209,
+        "opening_hours": {
+            "open": 9,
+            "close": 23
+        }
+    },
+    {
+        "restaurant ID": 34,
+        "name": "Benitez-Duran",
+        "category": [
+            "vegan"
+        ],
+        "city": {
+            "name": "Amsterdam",
+            "lat_range": [
+                52.3,
+                52.5
+            ],
+            "long_range": [
+                4.7,
+                5.0
+            ]
+        },
+        "latitude": 52.43294754963276,
+        "longitude": 4.74571311989812,
+        "opening_hours": {
+            "open": 9,
+            "close": 20
+        }
+    },
+    {
+        "restaurant ID": 35,
+        "name": "Bentley, Hanson and Combs",
+        "category": [
+            "france",
+            "european"
+        ],
+        "city": {
+            "name": "Brussels",
+            "lat_range": [
+                50.8,
+                50.9
+            ],
+            "long_range": [
+                4.3,
+                4.5
+            ]
+        },
+        "latitude": 50.83699152134697,
+        "longitude": 4.325320068912217,
+        "opening_hours": {
+            "open": 11,
+            "close": 23
+        }
+    },
+    {
+        "restaurant ID": 36,
+        "name": "Gray-Campbell",
         "category": [
             "asian",
             "sushi",
@@ -441,43 +922,142 @@
                 11.7
             ]
         },
-        "latitude": 48.14063077712851,
-        "longitude": 11.619151171886358,
+        "latitude": 48.12511692174798,
+        "longitude": 11.626176351329613,
         "opening_hours": {
-            "open": 11,
-            "close": 21
+            "open": 8,
+            "close": 18
         }
     },
     {
-        "restaurant ID": 18,
-        "name": "Wall-Jones",
+        "restaurant ID": 37,
+        "name": "Hernandez Ltd",
         "category": [
-            "tapes"
+            "pizza"
         ],
         "city": {
-            "name": "Zurich",
+            "name": "Vienna",
             "lat_range": [
-                47.3,
-                47.4
+                48.1,
+                48.3
             ],
             "long_range": [
-                8.5,
-                8.7
+                16.3,
+                16.6
             ]
         },
-        "latitude": 47.357991181317544,
-        "longitude": 8.680931654533062,
+        "latitude": 48.270877409852226,
+        "longitude": 16.51759458982718,
         "opening_hours": {
             "open": 10,
+            "close": 18
+        }
+    },
+    {
+        "restaurant ID": 38,
+        "name": "Clark, Wilkerson and Romero",
+        "category": [
+            "tapes",
+            "spanish"
+        ],
+        "city": {
+            "name": "Berlin",
+            "lat_range": [
+                52.5,
+                52.6
+            ],
+            "long_range": [
+                13.3,
+                13.5
+            ]
+        },
+        "latitude": 52.57647946515226,
+        "longitude": 13.32457924687733,
+        "opening_hours": {
+            "open": 10,
+            "close": 18
+        }
+    },
+    {
+        "restaurant ID": 39,
+        "name": "Thompson Ltd",
+        "category": [
+            "france",
+            "european"
+        ],
+        "city": {
+            "name": "London",
+            "lat_range": [
+                51.4,
+                51.6
+            ],
+            "long_range": [
+                -0.2,
+                0.2
+            ]
+        },
+        "latitude": 51.58305486849361,
+        "longitude": -0.09114290128274072,
+        "opening_hours": {
+            "open": 11,
             "close": 23
         }
     },
     {
-        "restaurant ID": 19,
-        "name": "Griffin and Sons",
+        "restaurant ID": 40,
+        "name": "Walker LLC",
         "category": [
-            "latin",
-            "mexican"
+            "portuguese",
+            "european",
+            "mediterranean"
+        ],
+        "city": {
+            "name": "Lisbon",
+            "lat_range": [
+                38.7,
+                38.8
+            ],
+            "long_range": [
+                -9.2,
+                -9.0
+            ]
+        },
+        "latitude": 38.79359529369773,
+        "longitude": -9.18265064176917,
+        "opening_hours": {
+            "open": 8,
+            "close": 18
+        }
+    },
+    {
+        "restaurant ID": 41,
+        "name": "Jefferson, Mcclain and Stewart",
+        "category": [
+            "barbaque"
+        ],
+        "city": {
+            "name": "Vienna",
+            "lat_range": [
+                48.1,
+                48.3
+            ],
+            "long_range": [
+                16.3,
+                16.6
+            ]
+        },
+        "latitude": 48.2325371960642,
+        "longitude": 16.578451279805144,
+        "opening_hours": {
+            "open": 9,
+            "close": 19
+        }
+    },
+    {
+        "restaurant ID": 42,
+        "name": "Castillo-Johnson",
+        "category": [
+            "spanish"
         ],
         "city": {
             "name": "Budapest",
@@ -490,11 +1070,187 @@
                 19.1
             ]
         },
-        "latitude": 47.40540431687683,
-        "longitude": 19.024160061667207,
+        "latitude": 47.41059032255419,
+        "longitude": 19.05355549143675,
         "opening_hours": {
             "open": 10,
+            "close": 19
+        }
+    },
+    {
+        "restaurant ID": 43,
+        "name": "Maldonado-Sheppard",
+        "category": [
+            "asian",
+            "sushi",
+            "japanese"
+        ],
+        "city": {
+            "name": "Vienna",
+            "lat_range": [
+                48.1,
+                48.3
+            ],
+            "long_range": [
+                16.3,
+                16.6
+            ]
+        },
+        "latitude": 48.14301511465817,
+        "longitude": 16.424718274827335,
+        "opening_hours": {
+            "open": 9,
+            "close": 20
+        }
+    },
+    {
+        "restaurant ID": 44,
+        "name": "Larsen-Skinner",
+        "category": [
+            "european",
+            "spanish",
+            "portuguese"
+        ],
+        "city": {
+            "name": "Madrid",
+            "lat_range": [
+                40.3,
+                40.5
+            ],
+            "long_range": [
+                -3.8,
+                -3.6
+            ]
+        },
+        "latitude": 40.450513538585774,
+        "longitude": -3.6863826937980084,
+        "opening_hours": {
+            "open": 9,
+            "close": 19
+        }
+    },
+    {
+        "restaurant ID": 45,
+        "name": "Frey LLC",
+        "category": [
+            "austriac"
+        ],
+        "city": {
+            "name": "Madrid",
+            "lat_range": [
+                40.3,
+                40.5
+            ],
+            "long_range": [
+                -3.8,
+                -3.6
+            ]
+        },
+        "latitude": 40.44527916401831,
+        "longitude": -3.6793637157377295,
+        "opening_hours": {
+            "open": 11,
+            "close": 22
+        }
+    },
+    {
+        "restaurant ID": 46,
+        "name": "Jones Inc",
+        "category": [
+            "latin"
+        ],
+        "city": {
+            "name": "London",
+            "lat_range": [
+                51.4,
+                51.6
+            ],
+            "long_range": [
+                -0.2,
+                0.2
+            ]
+        },
+        "latitude": 51.48953087949648,
+        "longitude": -0.08825282539431362,
+        "opening_hours": {
+            "open": 8,
+            "close": 18
+        }
+    },
+    {
+        "restaurant ID": 47,
+        "name": "Hendricks-Reid",
+        "category": [
+            "mexican",
+            "latin"
+        ],
+        "city": {
+            "name": "Berlin",
+            "lat_range": [
+                52.5,
+                52.6
+            ],
+            "long_range": [
+                13.3,
+                13.5
+            ]
+        },
+        "latitude": 52.56007031521145,
+        "longitude": 13.413698249128515,
+        "opening_hours": {
+            "open": 10,
+            "close": 22
+        }
+    },
+    {
+        "restaurant ID": 48,
+        "name": "Williams Group",
+        "category": [
+            "pasta",
+            "mediterranean"
+        ],
+        "city": {
+            "name": "Madrid",
+            "lat_range": [
+                40.3,
+                40.5
+            ],
+            "long_range": [
+                -3.8,
+                -3.6
+            ]
+        },
+        "latitude": 40.373760707007634,
+        "longitude": -3.6879245139637726,
+        "opening_hours": {
+            "open": 9,
             "close": 21
+        }
+    },
+    {
+        "restaurant ID": 49,
+        "name": "Velazquez, Butler and Ramirez",
+        "category": [
+            "portuguese",
+            "european",
+            "mediterranean"
+        ],
+        "city": {
+            "name": "Munich",
+            "lat_range": [
+                48.1,
+                48.2
+            ],
+            "long_range": [
+                11.4,
+                11.7
+            ]
+        },
+        "latitude": 48.13278087187952,
+        "longitude": 11.624413329563257,
+        "opening_hours": {
+            "open": 8,
+            "close": 22
         }
     }
 ]

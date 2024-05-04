@@ -45,3 +45,15 @@ class Matcher:
             for id in matches
             if self.file[id - 1]["Arrival City"] == city and betweenDate(self, id)
         ]
+
+    def filtrar_por_proximidad(self, group, restaurant):
+        # Implementa la lógica para filtrar por proximidad utilizando la función calculate_distance
+        pass
+
+    def filtrar_por_horarios(self, group, date):
+        # Implementa la lógica para filtrar por horarios de apertura y cierre
+        pass
+
+    def filtrar_por_preferencias(self, group, gustos_persona):
+        # Implementa la lógica para filtrar por los gustos de la persona
+        pass

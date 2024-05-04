@@ -1,11 +1,10 @@
-from matcher import Matcher
 from scheduler import Scheduler
 from travelers import Travelers
 from geopy.distance import geodesic
 from datetime import datetime, timedelta
 import random
 
-MAXDISTANCE = 5  # Por ejemplo, 5 km
+MAXDISTANCE = 5
 
 
 class Planner:
@@ -25,6 +24,8 @@ class Planner:
 
             if restaurant:
                 # Filtrar por proximidad
+                print(group)
+                print(restaurant)
                 group = self.filtrar_por_proximidad(group, restaurant)
 
                 # Filtrar por horarios de apertura y cierre
@@ -38,11 +39,18 @@ class Planner:
 
         return itinerary
 
+    def calculate_distance(self, restaurante1, restaurante2):
+        # Supongamos que los restaurantes tienen atributos 'latitude' y 'longitude'
+        coordenadas1 = (restaurante1["latitude"], restaurante1["longitude"])
+        coordenadas2 = (restaurante2["latitude"], restaurante2["longitude"])
+        distancia = geodesic(coordenadas1, coordenadas2).kilometers
+        return distancia
+
     def filtrar_por_proximidad(self, group, restaurant):
         # Supongamos que la función calcular_distancia está definida en Matcher
         # y devuelve la distancia entre dos puntos geográficos
         for otro_restaurante in group:
-            if calculate_distance(restaurant, otro_restaurante) < MAXDISTANCE:
+            if self.calculate_distance(restaurant, otro_restaurante) < MAXDISTANCE:
                 group.append(otro_restaurante)
         return group
 
@@ -68,10 +76,3 @@ class Planner:
             if any(gusto in restaurante["categorias"] for gusto in gustos_persona)
         ]
         return group_filtrado
-
-    def calculate_distance(self, restaurante1, restaurante2):
-        # Supongamos que los restaurantes tienen atributos 'latitude' y 'longitude'
-        coordenadas1 = (restaurante1["latitude"], restaurante1["longitude"])
-        coordenadas2 = (restaurante2["latitude"], restaurante2["longitude"])
-        distancia = geodesic(coordenadas1, coordenadas2).kilometers
-        return distancia
