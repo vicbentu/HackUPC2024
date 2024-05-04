@@ -6,19 +6,35 @@
     align-items: center;
     justify-content: center;
     margin: 0 auto;
+
+    background-color: #f2f2f2; /* Set the background color to light grey */
+  
   }
   
   .activity {
-    margin: 20px;
+
+    display: flex;
+    flex-direction: column;
+
     padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+
+    border: 1px solid rgba(255, 255, 255, .25);
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.45);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+
+    backdrop-filter: blur(15px);
+
+    margin-bottom: 5%;
+
   }
+
+  
   
   .activity h3 {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
   
   .activity p {
-    margin-bottom: 5px;
+    margin-bottom: 2px 0;
   }

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import styles from './Plan.module.css';
 
 export const Plan = () => {
@@ -10,17 +10,29 @@ export const Plan = () => {
   //     .then(data => setPlan(data));
   // }, []);
 
+  // return (
+  //   <div className={styles.planContainer}>
+  //     <h2>Plan de Actividades</h2>
+  //     {plan.map((activity, index) => (
+  //       <div key={index} className={styles.activity}>
+  //         <h3>{activity.name}</h3>
+  //         <p>{activity.description}</p>
+  //         <p>{activity.date}</p>
+  //         <p>{activity.location}</p>
+  //       </div>
+  //     ))}
+  //   </div>
+  // );
+  //falta hacer dinamico
   return (
     <div className={styles.planContainer}>
       <h2>Plan de Actividades</h2>
-      {plan.map((activity, index) => (
-        <div key={index} className={styles.activity}>
-          <h3>{activity.name}</h3>
-          <p>{activity.description}</p>
-          <p>{activity.date}</p>
-          <p>{activity.location}</p>
-        </div>
-      ))}
+      <div className={styles.activity}>
+          <h3>Pablo Picasso Museum</h3>
+          <p>Museum situated in center of barcelona</p>
+          <p>12/05/2024</p>
+          <p>Barcelona</p>
+      </div>
     </div>
   );
 };
