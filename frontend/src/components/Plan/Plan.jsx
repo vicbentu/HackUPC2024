@@ -23,11 +23,13 @@ export const Plan = () => {
     }
   ]);
 
-  useEffect(() => {
-    // fetch('https://localhost:5000/getRestaurants')
-    // .then((response) => response.json())
-    // .then((data) => setRestaurants(data));
-  }, []);
+  // const [restaurants, setRestaurants] = useState([]);
+
+  // useEffect(() => {
+  //   fetch('https://localhost:5000/getRestaurants')
+  //     .then((response) => response.json())
+  //     .then((data) => setRestaurants(data));
+  // }, []);
 
   return (
     <div className={styles.planContainer}>

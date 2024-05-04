@@ -1,5 +1,5 @@
 import axios from 'axios'
-const baseUrl = 'http://localhost:5000'
+const baseUrl = 'http://backend:5000'
 
 
 const getAllGustos = () => {
@@ -13,4 +13,6 @@ const getSchedule = (city, depDate, retDate) => {
 }
 
 
+// export default {getAllGustos, getSchedule}
 export default {getAllGustos, getSchedule}
+
