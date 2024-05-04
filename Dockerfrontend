@@ -1,0 +1,27 @@
+FROM ubuntu:latest
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+RUN apt-get update && apt-get install -y \
+    curl \
+    git \
+    npm \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /usr/src
+
+RUN apt-get install npm
+RUN npm install axios react-scripts
+
+
+COPY frontend /usr/src/frontend
+WORKDIR /usr/src/frontend
+
+CMD ["sh", "-c", "npm start"]
+# CMD ["sh", "-c", "/usr/src/venv/bin/python /usr/src/backend/server.py &  npm start"]
+# CMD ["sh", "-c", "./venv/bin/python /usr/src/frontend/server.py &  npm start "]
+# CMD ["sh", "-c", "cd /usr/src/backend && /usr/src/venv/bin/python server.py & cd - && npm start"]
+# CMD ["sh", "-c", "./venv/bin/python /usr/src/backend/server.py &  npm start --prefix /usr/src/frontend"]
+# CMD sh -c "cd /usr/src/backend && /usr/src/venv/bin/python server.py & cd /usr/src/frontend && npm start"
+# CMD ["sh", "-c", "cd /usr/src/backend && /usr/src/venv/bin/python server.py & sleep 3; cd /usr/src && npm start"]
+

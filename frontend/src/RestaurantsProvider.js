@@ -12,5 +12,5 @@ const getSchedule = (city, depDate, retDate) => {
     return request.then(response => response.data); // Outputs the JSON response from the server)
 }
 
-export default {getAllGustos, getSchedule}
 
+export default {getAllGustos, getSchedule}
