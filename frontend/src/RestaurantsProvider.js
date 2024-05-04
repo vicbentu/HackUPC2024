@@ -1,4 +1,11 @@
-const axios = require('axios');
+import axios from 'axios'
+const baseUrl = 'http://localhost:5000'
+
+
+const getAllGustos = () => {
+	const request = axios.get(`${baseUrl}/getAllGustos`)
+	return request.then(response => response.data)
+}
 
 function fetchData() {
     axios.get('http://localhost:5000/getPlan')
@@ -10,8 +17,5 @@ function fetchData() {
         });
 }
 
-function getPreferences() {
-    
-}
+export default {getAllGustos}
 
-fetchData(); // Executes the function

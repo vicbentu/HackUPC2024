@@ -13,7 +13,7 @@ class Travelers:
             reader = csv.DictReader(file)
             for row in reader:
                 traveler_id = row["Trip ID"]
-                gustos = row["favorite_categories"].split(",")
+                gustos = row["favorite_categories"].split(", ")
                 travelers_data[traveler_id] = gustos
         return travelers_data
 
@@ -21,10 +21,18 @@ class Travelers:
         return self.travelers_data.get(traveler_id, [])
 
     def get_all_gustos(self):
-        all_gustos = set()
+        L = []
         for gustos in self.travelers_data.values():
-            all_gustos.update(gustos)
-        return list(all_gustos)
+            for gusto in gustos:
+                L.append(gusto)
+        L = list(set(L))
+        ret = []
+        for x in L:
+            ret.append({
+                'id' : len(ret),
+                'val': x
+            })
+        return ret
 
 
 # Ejemplo de uso
