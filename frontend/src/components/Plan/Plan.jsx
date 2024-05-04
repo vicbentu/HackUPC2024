@@ -1,38 +1,45 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './Plan.module.css';
 
 export const Plan = () => {
-  const [plan, setPlan] = useState([]);
+  const [restaurants, setRestaurants] = useState([
+    {
+      title: "Restaurant 1",
+      streetName: "Street 1",
+      stars: 4,
+      city: "City 1"
+    },
+    {
+      title: "Restaurant 2",
+      streetName: "Street 2",
+      stars: 5,
+      city: "City 2"
+    },
+    {
+      title: "Restaurant 3",
+      streetName: "Street 3",
+      stars: 3,
+      city: "City 3"
+    }
+  ]);
 
-  // useEffect(() => {
-  //   fetch('http://localhost:5000/plan')  // Replace with your endpoint URL
-  //     .then(response => response.json())
-  //     .then(data => setPlan(data));
-  // }, []);
+  useEffect(() => {
+    // fetch('https://localhost:5000/getRestaurants')
+    // .then((response) => response.json())
+    // .then((data) => setRestaurants(data));
+  }, []);
 
-  // return (
-  //   <div className={styles.planContainer}>
-  //     <h2>Plan de Actividades</h2>
-  //     {plan.map((activity, index) => (
-  //       <div key={index} className={styles.activity}>
-  //         <h3>{activity.name}</h3>
-  //         <p>{activity.description}</p>
-  //         <p>{activity.date}</p>
-  //         <p>{activity.location}</p>
-  //       </div>
-  //     ))}
-  //   </div>
-  // );
-  //falta hacer dinamico
   return (
     <div className={styles.planContainer}>
-      <h2>Plan de Actividades</h2>
-      <div className={styles.activity}>
-          <h3>Pablo Picasso Museum</h3>
-          <p>Museum situated in center of barcelona</p>
-          <p>12/05/2024</p>
-          <p>Barcelona</p>
-      </div>
+      <h2>Restaurants</h2>
+      {restaurants.map((restaurant, index) => (
+        <div key={index} className={styles.restaurant}>
+          <h3>{restaurant.title}</h3>
+          <p>{restaurant.streetName}</p>
+          <p>{restaurant.stars} Stars</p>
+          <p>{restaurant.city}</p>
+        </div>
+      ))}
     </div>
   );
 };

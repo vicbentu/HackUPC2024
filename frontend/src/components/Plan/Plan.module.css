@@ -11,7 +11,7 @@
   
   }
   
-  .activity {
+  .restaurant {
 
     display: flex;
     flex-direction: column;
@@ -26,15 +26,15 @@
     backdrop-filter: blur(15px);
 
     margin-bottom: 5%;
+    width: 25%
 
   }
 
   
-  
-  .activity h3 {
+  .title {
     margin-bottom: 5px;
   }
   
-  .activity p {
+  .streetName .stars .city{
     margin-bottom: 2px 0;
   }

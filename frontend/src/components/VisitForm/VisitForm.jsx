@@ -30,12 +30,12 @@ function VisitForm() {
     <div>
       <form className={styles.VisitForm} onSubmit={handleSubmit}>
       <label>
-        City:
+        City
         <input type="text" value={city} onChange={(e) => setCity(e.target.value)} />
         {errors.city && <p>{errors.city}</p>}
       </label>
       <label>
-        Date:
+        Date
         <input type="date" value={date} onChange={(e) => setDate(e.target.value)} />
         {errors.date && <p>{errors.date}</p>}
       </label>
