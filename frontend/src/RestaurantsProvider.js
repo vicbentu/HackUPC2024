@@ -1,5 +1,5 @@
 import axios from 'axios'
-const baseUrl = 'http://backend:5000'
+const baseUrl = 'http://localhost:5000'
 
 
 const getAllGustos = () => {
@@ -7,15 +7,9 @@ const getAllGustos = () => {
 	return request.then(response => response.data)
 }
 
-function fetchData() {
-    axios.get('http://backend:5000/getPlan')
-        .then(response => {
-            console.log(response.data); // Outputs the JSON response from the server
-        })
-        .catch(error => {
-            console.error('Error:', error); // Outputs errors to the console
-        });
+const getSchedule = (city, depDate, retDate) => {
+    const request = axios.get(`${baseUrl}/getSchedule?city=${city}&depDate=${depDate}&retDate=${retDate}`);
+    return request.then(response => response.data); // Outputs the JSON response from the server)
 }
 
-export default {getAllGustos}
-
+export default {getAllGustos, getSchedule}
