@@ -1,18 +1,20 @@
 import random  # Para seleccionar elementos aleatorios
 import json  # Para exportar el resultado a JSON
 from faker import Faker  # Para generar nombres aleatorios
+import sys
 
-# Inicializa la clase Faker para crear datos ficticios
+
 faker = Faker()
+# inicializa la clase faker para crear datos ficticios
 
-# Lista de ciudades europeas permitidas
+# lista de ciudades europeas permitidas
 ciudades = [
     "Paris", "Amsterdam", "Munich", "London", "Madrid", "Florence",
     "Vienna", "Lisbon", "Budapest", "Barcelona", "Rome", "Zurich",
     "Prague", "Berlin", "Dublin", "Milan", "Brussels"
 ]
 
-# Lista de categorías posibles para los restaurantes
+# lista de categorías posibles para los restaurantes
 categorias = [
     "italian", "mediterranean", "mexican", "vegan", "japanese",
     "sushi", "france", "spanish", "portuguese", "austriac", "tapes", "latin",
@@ -39,7 +41,7 @@ categories_graph = {
     "pasta": ["mediterranean"]
 }
 
-# Función para generar un restaurante aleatorio
+# función para generar un restaurante aleatorio
 def generar_restaurante():
     nombre = faker.company()  # Generar un nombre ficticio
     ciudad = random.choice(ciudades)  # Elegir una ciudad aleatoria
@@ -76,10 +78,16 @@ def generar_lista_restaurantes(num_restaurantes):
         restaurantes[x]['restaurant ID'] = x
     return restaurantes
 
-# Ejemplo: generar 10 restaurantes aleatorios
-restaurantes_aleatorios = generar_lista_restaurantes(100)
+def main():
+    if len(sys.argv) != 2:
+        print('usage: python3 restaurantsgenerator.py <num-restaurants>')
+        return
+    # Ejemplo: generar 10 restaurantes aleatorios
+    restaurantes_aleatorios = generar_lista_restaurantes(int(sys.argv[1]))
 
-# Convertir la lista a JSON
-with open('dataset/restaurants.json', 'w', encoding='utf-8') as f:
-    json.dump(restaurantes_aleatorios, f, ensure_ascii=False, indent=4)
+    # Convertir la lista a JSON
+    with open('dataset/restaurants.json', 'w', encoding='utf-8') as f:
+        json.dump(restaurantes_aleatorios, f, ensure_ascii=False, indent=4)
+        print("json file generated")
 
+main()
