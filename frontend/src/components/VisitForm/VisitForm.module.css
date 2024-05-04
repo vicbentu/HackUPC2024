@@ -1,0 +1,62 @@
+/* VisitForm.css */
+
+@import "../../vars.css";
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+
+
+.VisitForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px; /* Ajusta este valor según el tamaño de tu navbar */
+  background-color: #f2f2f2; /* Add your desired background color here */
+  border: 2px solid #000;
+  font-family: 'Outfit', sans-serif; /* Aquí se aplica la fuente 'Outfit' */
+
+}
+
+.VisitForm label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.VisitForm input[type="text"], .VisitForm input[type="date"] {
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+ 
+}
+
+.VisitForm input[type="text"]:focus, .VisitForm input[type="date"]:focus {
+  /* Estilos para los campos de entrada cuando están enfocados */
+  border-color: #4CAF50;
+}
+
+.VisitForm input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 45px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.VisitForm input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.VisitForm div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
