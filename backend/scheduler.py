@@ -23,11 +23,8 @@ class Scheduler:
                 k=min(group_count, len(matches_day)), population=matches_day
             )
             restaurants_in_city = self.restaurants.getRestaurantsInCity(city)
-            if restaurants_in_city:  # Comprueba si la lista no está vacía
+            if restaurants_in_city and group:  # Comprueba si la lista no está vacía
                 restaurant = random.choice(restaurants_in_city)
-            else:
-                print(f"No hay restaurantes en la ciudad {city}")
-                restaurant = None
-            ret.append({"date": date, "group": group, "restaurant": restaurant})
+                ret.append({"date": date, "group": group, "restaurant": restaurant})
             date += td
         return ret
