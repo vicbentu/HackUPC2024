@@ -10,6 +10,11 @@ function VisitForm() {
   const [errors, setErrors] = useState({});
   const [gustos, setGustos] = useState([]);
 
+	const isDictEmpty = (dict) => {
+		for (var i in dict) return false
+		return true
+	}
+
   useEffect(() => {
     RestaurantsProvider.getAllGustos()
       .then(gustos => setGustos(gustos))
@@ -27,7 +32,15 @@ function VisitForm() {
 
     if (!depDate || !retDate) {
       formErrors.date = "Date is required";
-    }
+    } else if (depData > retDate)
+			formErrors.date = "Date range must be coherent"
+
+		if (isDictEmpty(formErrors)) 
+			RestaurantsProvider.getSchedule(city, depDate, retDate)
+			.then(data => console.log(data))
+			.catch(error => console.log(error))
+
+		
 
     setErrors(formErrors);
   };
