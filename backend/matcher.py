@@ -1,12 +1,11 @@
 from datetime import *
-from geopy.distance import geodesic
 
 import csv
 
 
 class Matcher:
     def __init__(self):
-        with open("dataset/hackupc-travelperk-dataset.csv", mode="r") as file:
+        with open("dataset/output.csv", mode="r") as file:
             self.file = list(csv.DictReader(file))
 
     def read(self):
@@ -46,10 +45,3 @@ class Matcher:
             for id in matches
             if self.file[id - 1]["Arrival City"] == city and betweenDate(self, id)
         ]
-
-    def calculate_distance(self, restaurante1, restaurante2):
-        # Supongamos que los restaurantes tienen atributos 'latitude' y 'longitude'
-        coordenadas1 = (restaurante1["latitude"], restaurante1["longitude"])
-        coordenadas2 = (restaurante2["latitude"], restaurante2["longitude"])
-        distancia = geodesic(coordenadas1, coordenadas2).kilometers
-        return distancia

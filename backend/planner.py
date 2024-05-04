@@ -1,7 +1,7 @@
 from matcher import Matcher
 from scheduler import Scheduler
 from travelers import Travelers
-from matcher import calculate_distance  # Import the calculate_distance function
+from geopy.distance import geodesic
 from datetime import datetime, timedelta
 import random
 
@@ -68,3 +68,10 @@ class Planner:
             if any(gusto in restaurante["categorias"] for gusto in gustos_persona)
         ]
         return group_filtrado
+
+    def calculate_distance(self, restaurante1, restaurante2):
+        # Supongamos que los restaurantes tienen atributos 'latitude' y 'longitude'
+        coordenadas1 = (restaurante1["latitude"], restaurante1["longitude"])
+        coordenadas2 = (restaurante2["latitude"], restaurante2["longitude"])
+        distancia = geodesic(coordenadas1, coordenadas2).kilometers
+        return distancia

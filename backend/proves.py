@@ -1,10 +1,15 @@
-from scheduler import Scheduler
+from planner import Planner  # Asegúrate de que esta es la clase correcta
 from datetime import datetime
 
-city = 'Berlin'
-arrival_date = datetime(day=8, month=2, year=2024)
-departure_date = datetime(day=30, month=3, year=2024)
+city = "Berlin"
+arrival_date = datetime(day=11, month=1, year=2024)
+departure_date = datetime(day=14, month=1, year=2024)
 
-myScheduler = Scheduler()
-for e in myScheduler.getSchedule(city, arrival_date, departure_date):
+myPlanner = Planner()  # Crea una instancia de la clase Planner
+schedule = myPlanner.plan_itinerary(
+    city, arrival_date, departure_date, 8
+)  # Llama al método getSchedule
+
+
+for e in schedule:
     print(e)

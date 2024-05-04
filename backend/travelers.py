@@ -20,6 +20,12 @@ class Travelers:
     def get_traveler_gustos(self, traveler_id):
         return self.travelers_data.get(traveler_id, [])
 
+    def get_all_gustos(self):
+        all_gustos = set()
+        for gustos in self.travelers_data.values():
+            all_gustos.update(gustos)
+        return list(all_gustos)
+
 
 # Ejemplo de uso
 if __name__ == "__main__":
