@@ -17,18 +17,21 @@ RUN apt-get update && apt-get install -y \
 #     && node --version \
 #     && npm --version
     
-RUN python3 -m venv venv
-RUN ./venv/bin/pip install flask
+
 
 # RUN python3 -m pip install flask
 # RUN apt install python3-flask
 WORKDIR /usr/src/app
 
+RUN python3 -m venv venv
+RUN ./venv/bin/pip install flask
+
 RUN apt-get install npm
 RUN npm install react-scripts --verbose
 
+# COPY frontend/
 
 
 
 
-CMD ["sh", "-c", "venv/bin/python /usr/src/backend/server.py & npm start"]
+CMD ["sh", "-c", "./venv/bin/python /usr/src/backend/server.py &  npm start --prefix /usr/src/app"]
