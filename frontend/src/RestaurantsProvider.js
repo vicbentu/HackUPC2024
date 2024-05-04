@@ -1,5 +1,5 @@
 import axios from 'axios'
-const baseUrl = 'http://localhost:5000'
+const baseUrl = 'http://backend:5000'
 
 
 const getAllGustos = () => {
@@ -8,7 +8,7 @@ const getAllGustos = () => {
 }
 
 function fetchData() {
-    axios.get('http://localhost:5000/getPlan')
+    axios.get('http://backend:5000/getPlan')
         .then(response => {
             console.log(response.data); // Outputs the JSON response from the server
         })
