@@ -41,7 +41,7 @@ class Matcher:
             return depD <= date and retD >= date
 
         return [
-            id
+            self.file[id - 1]["Traveller Name"]
             for id in matches
             if self.file[id - 1]["Arrival City"] == city and betweenDate(self, id)
         ]
