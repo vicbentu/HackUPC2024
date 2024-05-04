@@ -3,7 +3,7 @@ import styles from './VisitForm.module.css';
 import RestaurantsProvider from '../../RestaurantsProvider.js';
 import GustosButton from './GustosButton'; // Importa el componente GustosButton
 
-function VisitForm() {
+function VisitForm({setPlans}) {
   const [city, setCity] = useState('');
   const [depDate, setDepDate] = useState('');
   const [retDate, setRetDate] = useState('');
@@ -32,12 +32,12 @@ function VisitForm() {
 
     if (!depDate || !retDate) {
       formErrors.date = "Date is required";
-    } else if (depData > retDate)
+    } else if (depDate > retDate)
 			formErrors.date = "Date range must be coherent"
 
 		if (isDictEmpty(formErrors)) 
 			RestaurantsProvider.getSchedule(city, depDate, retDate)
-			.then(data => console.log(data))
+			.then(data => setPlans(data))
 			.catch(error => console.log(error))
 
 		

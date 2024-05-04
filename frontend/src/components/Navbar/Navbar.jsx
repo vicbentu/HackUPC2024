@@ -8,7 +8,7 @@ export const Navbar = () => {
 
   return (
     <nav className={styles.navbar}>
-      <button className={styles.loginBtn}>Login</button>
+      {/* <button className={styles.loginBtn}>Login</button> */}
       {/* <img className={styles.title} src='/logo192.png' alt='logo' /> */}
       <BsAirplane className={styles.icon}/>
 
