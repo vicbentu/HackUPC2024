@@ -36,6 +36,11 @@
     height: 70%;
     overflow-y: auto;
   }
+
+  .modalContent h2{
+    color: white;
+    text-align: center;
+  }
   
   /* Estilos para el botón de cierre del modal */
   .close {
@@ -53,11 +58,15 @@
   }
   
   /* Estilos para el grid de gustos */
-  .gustosGrid {
-    display: grid;
+.gustosGrid {
+    display: grid !important;
     grid-template-columns: repeat(4, 1fr); /* 4 columnas */
     grid-gap: 10px; /* Espacio entre las cajas */
-  }
+    background-color: #f9f9f9;
+    border-radius: 8px; /* Round borders */
+    width: 95% !important;
+
+}
   
   /* Estilos para las etiquetas de los checkbox */
   .checkboxLabel {
@@ -105,32 +114,29 @@
     transform: rotate(45deg);
   }
 
-  .gridItem {
-    /* Add a border around each grid item */
-    border: 1px solid #ddd;
-  
-    /* Add some padding inside each grid item */
-    padding: 10px;
-  
-    /* Center the content of each grid item */
-    justify-content: center;
-    align-items: center;
-  
-    /* Add a background color to each grid item */
-    background-color: #f9f9f9;
-  
-    /* Add some hover effect */
-    transition: background-color 0.3s ease;
-  }
-  
-  .gridItem:hover {
-    /* Change the background color on hover */
-    background-color: #f0f0f0;
-  }
 
-  .itemDiv{
-    display: grid;
-  }
+.itemDiv {
+    padding-left: 15px !important;
+    border: 1px solid #ddd;
+    padding: 5px;
+    width: 120px !important;
+    justify-content: center !important;
+    align-items: center !important;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+    border: none;
+}
+
+.itemDiv:last-child {
+    justify-self: center;
+    align-self: center;
+}
+
+.itemDiv:hover{
+        /* Change the background color on hover */
+    background-color: #f0f0f0;
+
+}
 
   
 
