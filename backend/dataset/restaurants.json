@@ -1,0 +1,878 @@
+[
+    {
+        "restaurant ID": 0,
+        "name": "Galvan Group",
+        "category": [
+            "asian",
+            "sushi"
+        ],
+        "city": "Paris"
+    },
+    {
+        "restaurant ID": 1,
+        "name": "Hughes, Martinez and Jones",
+        "category": [
+            "pizza",
+            "italian"
+        ],
+        "city": "Prague"
+    },
+    {
+        "restaurant ID": 2,
+        "name": "Perez and Sons",
+        "category": [
+            "barbaque"
+        ],
+        "city": "Munich"
+    },
+    {
+        "restaurant ID": 3,
+        "name": "Graves Group",
+        "category": [
+            "european",
+            "spanish"
+        ],
+        "city": "Amsterdam"
+    },
+    {
+        "restaurant ID": 4,
+        "name": "Sanchez Group",
+        "category": [
+            "mexican"
+        ],
+        "city": "Amsterdam"
+    },
+    {
+        "restaurant ID": 5,
+        "name": "Martinez, Schmidt and Mack",
+        "category": [
+            "italian",
+            "mediterranean"
+        ],
+        "city": "Munich"
+    },
+    {
+        "restaurant ID": 6,
+        "name": "Hines and Sons",
+        "category": [
+            "latin",
+            "mexican"
+        ],
+        "city": "Dublin"
+    },
+    {
+        "restaurant ID": 7,
+        "name": "Martin, Carter and Kelly",
+        "category": [
+            "asian"
+        ],
+        "city": "Budapest"
+    },
+    {
+        "restaurant ID": 8,
+        "name": "Pittman, Tate and Cuevas",
+        "category": [
+            "sushi",
+            "japanese"
+        ],
+        "city": "Milan"
+    },
+    {
+        "restaurant ID": 9,
+        "name": "Jones-Bernard",
+        "category": [
+            "mexican",
+            "latin"
+        ],
+        "city": "Florence"
+    },
+    {
+        "restaurant ID": 10,
+        "name": "Anderson, Stephens and Byrd",
+        "category": [
+            "european",
+            "spanish",
+            "portuguese"
+        ],
+        "city": "Rome"
+    },
+    {
+        "restaurant ID": 11,
+        "name": "Little Group",
+        "category": [
+            "latin",
+            "mexican"
+        ],
+        "city": "Rome"
+    },
+    {
+        "restaurant ID": 12,
+        "name": "Carrillo-Sims",
+        "category": [
+            "pasta",
+            "mediterranean"
+        ],
+        "city": "Prague"
+    },
+    {
+        "restaurant ID": 13,
+        "name": "Diaz-Herrera",
+        "category": [
+            "asian",
+            "sushi"
+        ],
+        "city": "Brussels"
+    },
+    {
+        "restaurant ID": 14,
+        "name": "Short, Torres and Perez",
+        "category": [
+            "european"
+        ],
+        "city": "Berlin"
+    },
+    {
+        "restaurant ID": 15,
+        "name": "Hayden, Obrien and Vincent",
+        "category": [
+            "vegan"
+        ],
+        "city": "Florence"
+    },
+    {
+        "restaurant ID": 16,
+        "name": "Phillips Group",
+        "category": [
+            "mexican"
+        ],
+        "city": "Vienna"
+    },
+    {
+        "restaurant ID": 17,
+        "name": "Horn, Mcgrath and Wheeler",
+        "category": [
+            "pizza",
+            "italian"
+        ],
+        "city": "Budapest"
+    },
+    {
+        "restaurant ID": 18,
+        "name": "Malone-Hubbard",
+        "category": [
+            "vegan"
+        ],
+        "city": "Zurich"
+    },
+    {
+        "restaurant ID": 19,
+        "name": "Thomas, Hansen and Reyes",
+        "category": [
+            "pizza"
+        ],
+        "city": "Milan"
+    },
+    {
+        "restaurant ID": 20,
+        "name": "Fuller Ltd",
+        "category": [
+            "mexican"
+        ],
+        "city": "Amsterdam"
+    },
+    {
+        "restaurant ID": 21,
+        "name": "Taylor, Smith and Hogan",
+        "category": [
+            "mexican",
+            "latin"
+        ],
+        "city": "Amsterdam"
+    },
+    {
+        "restaurant ID": 22,
+        "name": "Nguyen-Williams",
+        "category": [
+            "latin"
+        ],
+        "city": "Prague"
+    },
+    {
+        "restaurant ID": 23,
+        "name": "Williams, Turner and Sanders",
+        "category": [
+            "tapes"
+        ],
+        "city": "Rome"
+    },
+    {
+        "restaurant ID": 24,
+        "name": "Morgan-Mccall",
+        "category": [
+            "portuguese",
+            "european",
+            "mediterranean"
+        ],
+        "city": "Vienna"
+    },
+    {
+        "restaurant ID": 25,
+        "name": "Johnson-Williams",
+        "category": [
+            "asian",
+            "sushi"
+        ],
+        "city": "Munich"
+    },
+    {
+        "restaurant ID": 26,
+        "name": "Robbins-Thompson",
+        "category": [
+            "france",
+            "european",
+            "spanish"
+        ],
+        "city": "Vienna"
+    },
+    {
+        "restaurant ID": 27,
+        "name": "Rodgers-Leblanc",
+        "category": [
+            "japanese"
+        ],
+        "city": "Lisbon"
+    },
+    {
+        "restaurant ID": 28,
+        "name": "Ortiz-Schroeder",
+        "category": [
+            "mediterranean"
+        ],
+        "city": "Berlin"
+    },
+    {
+        "restaurant ID": 29,
+        "name": "Johnson LLC",
+        "category": [
+            "austriac"
+        ],
+        "city": "Prague"
+    },
+    {
+        "restaurant ID": 30,
+        "name": "Taylor LLC",
+        "category": [
+            "mexican",
+            "latin"
+        ],
+        "city": "Paris"
+    },
+    {
+        "restaurant ID": 31,
+        "name": "Roberts Ltd",
+        "category": [
+            "spanish",
+            "tapes",
+            "european"
+        ],
+        "city": "Paris"
+    },
+    {
+        "restaurant ID": 32,
+        "name": "Hooper, Levine and Arnold",
+        "category": [
+            "pasta"
+        ],
+        "city": "Prague"
+    },
+    {
+        "restaurant ID": 33,
+        "name": "Walls and Sons",
+        "category": [
+            "pasta",
+            "mediterranean"
+        ],
+        "city": "Dublin"
+    },
+    {
+        "restaurant ID": 34,
+        "name": "Taylor, Lindsey and Reed",
+        "category": [
+            "european",
+            "spanish"
+        ],
+        "city": "London"
+    },
+    {
+        "restaurant ID": 35,
+        "name": "Holland Group",
+        "category": [
+            "tapes",
+            "spanish"
+        ],
+        "city": "Paris"
+    },
+    {
+        "restaurant ID": 36,
+        "name": "Lynch-Pratt",
+        "category": [
+            "latin"
+        ],
+        "city": "Milan"
+    },
+    {
+        "restaurant ID": 37,
+        "name": "Ward, Ortiz and Ruiz",
+        "category": [
+            "spanish",
+            "tapes",
+            "european"
+        ],
+        "city": "Paris"
+    },
+    {
+        "restaurant ID": 38,
+        "name": "Higgins PLC",
+        "category": [
+            "european",
+            "spanish"
+        ],
+        "city": "Milan"
+    },
+    {
+        "restaurant ID": 39,
+        "name": "Gomez, Jackson and Mays",
+        "category": [
+            "pasta"
+        ],
+        "city": "Zurich"
+    },
+    {
+        "restaurant ID": 40,
+        "name": "Simon, Johnson and Lopez",
+        "category": [
+            "tapes",
+            "spanish",
+            "european"
+        ],
+        "city": "Dublin"
+    },
+    {
+        "restaurant ID": 41,
+        "name": "Gonzalez-Howard",
+        "category": [
+            "france",
+            "european"
+        ],
+        "city": "Budapest"
+    },
+    {
+        "restaurant ID": 42,
+        "name": "Williams-Baker",
+        "category": [
+            "sushi"
+        ],
+        "city": "Barcelona"
+    },
+    {
+        "restaurant ID": 43,
+        "name": "Hicks, Potter and Curry",
+        "category": [
+            "latin",
+            "mexican"
+        ],
+        "city": "Prague"
+    },
+    {
+        "restaurant ID": 44,
+        "name": "Cabrera and Sons",
+        "category": [
+            "tapes"
+        ],
+        "city": "Amsterdam"
+    },
+    {
+        "restaurant ID": 45,
+        "name": "Evans Inc",
+        "category": [
+            "pasta",
+            "mediterranean"
+        ],
+        "city": "Vienna"
+    },
+    {
+        "restaurant ID": 46,
+        "name": "Weaver, Berger and Crawford",
+        "category": [
+            "france",
+            "european"
+        ],
+        "city": "Budapest"
+    },
+    {
+        "restaurant ID": 47,
+        "name": "Morgan-Jones",
+        "category": [
+            "european",
+            "spanish",
+            "portuguese"
+        ],
+        "city": "Budapest"
+    },
+    {
+        "restaurant ID": 48,
+        "name": "Glover Group",
+        "category": [
+            "tapes",
+            "spanish"
+        ],
+        "city": "Madrid"
+    },
+    {
+        "restaurant ID": 49,
+        "name": "Smith, Whitaker and Collins",
+        "category": [
+            "vegan"
+        ],
+        "city": "Barcelona"
+    },
+    {
+        "restaurant ID": 50,
+        "name": "Malone-Newton",
+        "category": [
+            "italian"
+        ],
+        "city": "Zurich"
+    },
+    {
+        "restaurant ID": 51,
+        "name": "Jones, Griffin and Campbell",
+        "category": [
+            "tapes",
+            "spanish"
+        ],
+        "city": "Vienna"
+    },
+    {
+        "restaurant ID": 52,
+        "name": "Foster-Gould",
+        "category": [
+            "austriac"
+        ],
+        "city": "Milan"
+    },
+    {
+        "restaurant ID": 53,
+        "name": "Patterson and Sons",
+        "category": [
+            "italian",
+            "mediterranean"
+        ],
+        "city": "Lisbon"
+    },
+    {
+        "restaurant ID": 54,
+        "name": "Allen-Rogers",
+        "category": [
+            "asian",
+            "sushi",
+            "japanese"
+        ],
+        "city": "Berlin"
+    },
+    {
+        "restaurant ID": 55,
+        "name": "White Group",
+        "category": [
+            "mexican",
+            "latin"
+        ],
+        "city": "Florence"
+    },
+    {
+        "restaurant ID": 56,
+        "name": "Harrison-Becker",
+        "category": [
+            "austriac"
+        ],
+        "city": "Zurich"
+    },
+    {
+        "restaurant ID": 57,
+        "name": "Booker-Taylor",
+        "category": [
+            "france",
+            "european",
+            "spanish"
+        ],
+        "city": "Berlin"
+    },
+    {
+        "restaurant ID": 58,
+        "name": "Palmer-Wagner",
+        "category": [
+            "asian",
+            "sushi",
+            "japanese"
+        ],
+        "city": "Vienna"
+    },
+    {
+        "restaurant ID": 59,
+        "name": "Armstrong, Alvarez and Ortega",
+        "category": [
+            "pasta",
+            "mediterranean",
+            "spanish"
+        ],
+        "city": "London"
+    },
+    {
+        "restaurant ID": 60,
+        "name": "Wilson-Mann",
+        "category": [
+            "asian",
+            "sushi",
+            "japanese"
+        ],
+        "city": "Paris"
+    },
+    {
+        "restaurant ID": 61,
+        "name": "Ellison-Simpson",
+        "category": [
+            "japanese"
+        ],
+        "city": "Vienna"
+    },
+    {
+        "restaurant ID": 62,
+        "name": "Lynn-Jones",
+        "category": [
+            "sushi"
+        ],
+        "city": "Barcelona"
+    },
+    {
+        "restaurant ID": 63,
+        "name": "Vazquez-Cochran",
+        "category": [
+            "european"
+        ],
+        "city": "Florence"
+    },
+    {
+        "restaurant ID": 64,
+        "name": "Park, Walker and Wheeler",
+        "category": [
+            "portuguese",
+            "european",
+            "mediterranean"
+        ],
+        "city": "Dublin"
+    },
+    {
+        "restaurant ID": 65,
+        "name": "Garcia PLC",
+        "category": [
+            "italian",
+            "mediterranean"
+        ],
+        "city": "Paris"
+    },
+    {
+        "restaurant ID": 66,
+        "name": "Valdez-Diaz",
+        "category": [
+            "mediterranean",
+            "spanish",
+            "portuguese"
+        ],
+        "city": "Brussels"
+    },
+    {
+        "restaurant ID": 67,
+        "name": "Ware LLC",
+        "category": [
+            "barbaque"
+        ],
+        "city": "London"
+    },
+    {
+        "restaurant ID": 68,
+        "name": "Jones Group",
+        "category": [
+            "sushi",
+            "japanese"
+        ],
+        "city": "Budapest"
+    },
+    {
+        "restaurant ID": 69,
+        "name": "Craig Group",
+        "category": [
+            "france",
+            "european",
+            "spanish"
+        ],
+        "city": "Barcelona"
+    },
+    {
+        "restaurant ID": 70,
+        "name": "Stanton, Wagner and Larson",
+        "category": [
+            "asian",
+            "sushi",
+            "japanese"
+        ],
+        "city": "Milan"
+    },
+    {
+        "restaurant ID": 71,
+        "name": "Johns and Sons",
+        "category": [
+            "vegan"
+        ],
+        "city": "Munich"
+    },
+    {
+        "restaurant ID": 72,
+        "name": "Salinas, Watson and Li",
+        "category": [
+            "pizza",
+            "italian"
+        ],
+        "city": "Vienna"
+    },
+    {
+        "restaurant ID": 73,
+        "name": "Lamb Inc",
+        "category": [
+            "european"
+        ],
+        "city": "Lisbon"
+    },
+    {
+        "restaurant ID": 74,
+        "name": "Fox, Reed and Hardin",
+        "category": [
+            "sushi"
+        ],
+        "city": "Brussels"
+    },
+    {
+        "restaurant ID": 75,
+        "name": "Daugherty-Campbell",
+        "category": [
+            "mexican",
+            "latin"
+        ],
+        "city": "London"
+    },
+    {
+        "restaurant ID": 76,
+        "name": "Pena LLC",
+        "category": [
+            "pasta",
+            "mediterranean"
+        ],
+        "city": "Brussels"
+    },
+    {
+        "restaurant ID": 77,
+        "name": "Davis Ltd",
+        "category": [
+            "pizza"
+        ],
+        "city": "London"
+    },
+    {
+        "restaurant ID": 78,
+        "name": "Solomon Ltd",
+        "category": [
+            "mediterranean"
+        ],
+        "city": "Lisbon"
+    },
+    {
+        "restaurant ID": 79,
+        "name": "Walters Inc",
+        "category": [
+            "tapes"
+        ],
+        "city": "Amsterdam"
+    },
+    {
+        "restaurant ID": 80,
+        "name": "Copeland-Nelson",
+        "category": [
+            "asian",
+            "sushi"
+        ],
+        "city": "Florence"
+    },
+    {
+        "restaurant ID": 81,
+        "name": "Zimmerman-Murphy",
+        "category": [
+            "austriac"
+        ],
+        "city": "Amsterdam"
+    },
+    {
+        "restaurant ID": 82,
+        "name": "Bray-Smith",
+        "category": [
+            "japanese",
+            "sushi",
+            "asian"
+        ],
+        "city": "Paris"
+    },
+    {
+        "restaurant ID": 83,
+        "name": "Chavez, Oliver and Short",
+        "category": [
+            "france",
+            "european",
+            "spanish"
+        ],
+        "city": "Vienna"
+    },
+    {
+        "restaurant ID": 84,
+        "name": "Smith, Obrien and Turner",
+        "category": [
+            "asian"
+        ],
+        "city": "Lisbon"
+    },
+    {
+        "restaurant ID": 85,
+        "name": "Wright-Pearson",
+        "category": [
+            "barbaque"
+        ],
+        "city": "Madrid"
+    },
+    {
+        "restaurant ID": 86,
+        "name": "Johnson, Perez and Wilson",
+        "category": [
+            "tapes"
+        ],
+        "city": "Paris"
+    },
+    {
+        "restaurant ID": 87,
+        "name": "Russell-Ingram",
+        "category": [
+            "austriac"
+        ],
+        "city": "Zurich"
+    },
+    {
+        "restaurant ID": 88,
+        "name": "Crane Group",
+        "category": [
+            "vegan"
+        ],
+        "city": "Berlin"
+    },
+    {
+        "restaurant ID": 89,
+        "name": "Morgan Ltd",
+        "category": [
+            "european",
+            "spanish"
+        ],
+        "city": "Zurich"
+    },
+    {
+        "restaurant ID": 90,
+        "name": "Walker, Snyder and Hamilton",
+        "category": [
+            "sushi",
+            "japanese",
+            "asian"
+        ],
+        "city": "Prague"
+    },
+    {
+        "restaurant ID": 91,
+        "name": "Carter-Roberts",
+        "category": [
+            "tapes",
+            "spanish"
+        ],
+        "city": "Munich"
+    },
+    {
+        "restaurant ID": 92,
+        "name": "Long, Moon and Humphrey",
+        "category": [
+            "pasta"
+        ],
+        "city": "Lisbon"
+    },
+    {
+        "restaurant ID": 93,
+        "name": "Rodriguez LLC",
+        "category": [
+            "france"
+        ],
+        "city": "Brussels"
+    },
+    {
+        "restaurant ID": 94,
+        "name": "Nguyen, Huang and Phillips",
+        "category": [
+            "france"
+        ],
+        "city": "Barcelona"
+    },
+    {
+        "restaurant ID": 95,
+        "name": "Phillips, Gaines and Madden",
+        "category": [
+            "pizza"
+        ],
+        "city": "Rome"
+    },
+    {
+        "restaurant ID": 96,
+        "name": "Melton-Smith",
+        "category": [
+            "pizza"
+        ],
+        "city": "Budapest"
+    },
+    {
+        "restaurant ID": 97,
+        "name": "Clark-Nielsen",
+        "category": [
+            "sushi",
+            "japanese",
+            "asian"
+        ],
+        "city": "Prague"
+    },
+    {
+        "restaurant ID": 98,
+        "name": "Thompson, Carter and Tyler",
+        "category": [
+            "mediterranean",
+            "spanish",
+            "portuguese"
+        ],
+        "city": "London"
+    },
+    {
+        "restaurant ID": 99,
+        "name": "Sullivan, Nolan and Moore",
+        "category": [
+            "vegan"
+        ],
+        "city": "Zurich"
+    }
+]
