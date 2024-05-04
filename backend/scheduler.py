@@ -10,9 +10,7 @@ class Scheduler:
     
     def getSchedule(self, city, arrival_date, departure_date):
         matches = self.matcher.getPotentialMatches(city, arrival_date, departure_date)
-        print(matches)
         restaurants_list = self.restaurants.getRestaurantsInCity(city)
-        for restaurant in restaurants_list: print(restaurant)
 
         td = timedelta(days=1)
         date = arrival_date
