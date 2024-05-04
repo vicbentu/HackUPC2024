@@ -1,93 +1,70 @@
-# tener en cuenta:
-# proximidad de restaurantes
-# horarios de apertura y cierre
-# preferencia de personas
+from matcher import Matcher
+from scheduler import Scheduler
+from travelers import Travelers
+from matcher import calculate_distance  # Import the calculate_distance function
+from datetime import datetime, timedelta
+import random
 
-import json
-import csv
-from datetime import datetime
-
-
-# Cargar datos de restaurantes desde el archivo JSON
-def cargar_restaurantes(file_path):
-    with open(file_path, "r") as file:
-        restaurantes = json.load(file)
-    return restaurantes
+MAXDISTANCE = 5  # Por ejemplo, 5 km
 
 
-# Cargar datos de viajeros desde el archivo CSV
-def cargar_viajeros(file_path):
-    with open(file_path, "r") as file:
-        reader = csv.DictReader(file)
-        viajeros = [row for row in reader]
-    return viajeros
+class Planner:
+    def __init__(self):
+        self.scheduler = Scheduler()
+        self.travelers = Travelers()
 
+    def plan_itinerary(self, city, arrival_date, departure_date, traveler_id):
+        schedule = self.scheduler.getSchedule(city, arrival_date, departure_date)
+        gustos = self.travelers.get_traveler_gustos(traveler_id)
+        itinerary = []
 
-# Calcular la distancia entre dos puntos (coordenadas latitud y longitud)
-def calcular_distancia(lat1, lon1, lat2, lon2):
-    # Implementa la fórmula para calcular la distancia entre dos puntos geográficos
-    pass
+        for item in schedule:
+            date = item["date"]
+            group = item["group"]
+            restaurant = item["restaurant"]
 
+            if restaurant:
+                # Filtrar por proximidad
+                group = self.filtrar_por_proximidad(group, restaurant)
 
-# Filtrar restaurantes por proximidad
-def filtrar_por_proximidad(restaurantes, viajero):
-    # Calcula la distancia entre cada restaurante y el alojamiento del viajero
-    # Filtra los restaurantes que están dentro de un radio determinado de la ubicación del viajero
-    pass
+                # Filtrar por horarios de apertura y cierre
+                group = self.filtrar_por_horarios(group, date)
 
+                # Filtrar por los gustos de la persona
+                group = self.filtrar_por_preferencias(group, gustos)
 
-# Filtrar restaurantes por horarios de apertura y cierre
-def filtrar_por_horarios(restaurantes, fecha, hora):
-    # Filtra los restaurantes que están abiertos en la fecha y hora especificadas
-    pass
+                # Agregar el restaurante seleccionado al itinerario
+                itinerary.append({"date": date, "restaurant": restaurant})
 
+        return itinerary
 
-# Filtrar restaurantes por preferencias del viajero
-def filtrar_por_preferencias(restaurantes, preferencias):
-    # Filtra los restaurantes que coinciden con las preferencias del viajero
-    pass
+    def filtrar_por_proximidad(self, group, restaurant):
+        # Supongamos que la función calcular_distancia está definida en Matcher
+        # y devuelve la distancia entre dos puntos geográficos
+        for otro_restaurante in group:
+            if calculate_distance(restaurant, otro_restaurante) < MAXDISTANCE:
+                group.append(otro_restaurante)
+        return group
 
+    def filtrar_por_horarios(self, group, date):
+        # Supongamos que los horarios de apertura y cierre están disponibles en cada restaurante
+        horario_apertura = date.replace(
+            hour=9, minute=0
+        )  # Por ejemplo, abre a las 9:00 am
+        horario_cierre = date.replace(
+            hour=21, minute=0
+        )  # Por ejemplo, cierra a las 9:00 pm
+        group_filtrado = [
+            restaurante
+            for restaurante in group
+            if horario_apertura <= restaurante["hora_apertura"] <= horario_cierre
+        ]
+        return group_filtrado
 
-# Generar itinerario de restaurantes para un viajero
-def generar_itinerario(viajero, restaurantes):
-    itinerario = {}
-    # Itera sobre los días de estancia del viajero
-    for dia in range(viajero["dias_estancia"]):
-        fecha = viajero["fecha_llegada"] + timedelta(days=dia)
-        # Filtra los restaurantes disponibles en la fecha específica
-        restaurantes_disponibles = filtrar_por_horarios(
-            restaurantes, fecha, viajero["hora_disponible"]
-        )
-        # Filtra los restaurantes por proximidad al alojamiento del viajero
-        restaurantes_proximos = filtrar_por_proximidad(
-            restaurantes_disponibles, viajero
-        )
-        # Filtra los restaurantes por preferencias del viajero
-        restaurantes_preferidos = filtrar_por_preferencias(
-            restaurantes_proximos, viajero["preferencias"]
-        )
-        # Agrega los restaurantes al itinerario del día
-        itinerario[fecha] = restaurantes_preferidos
-    return itinerario
-
-
-# Guardar el itinerario generado en un archivo CSV
-def guardar_itinerario(itinerario, file_path):
-    with open(file_path, "w", newline="") as file:
-        writer = csv.writer(file)
-        writer.writerow(["Fecha", "Restaurantes"])
-        for fecha, restaurantes in itinerario.items():
-            writer.writerow([fecha, ", ".join(restaurantes)])
-
-
-# Ejemplo de uso
-def main():
-    restaurantes = cargar_restaurantes("restaurantes.json")
-    viajeros = cargar_viajeros("viajeros.csv")
-    for viajero in viajeros:
-        itinerario = generar_itinerario(viajero, restaurantes)
-        guardar_itinerario(itinerario, f"itinerario_{viajero['id']}.csv")
-
-
-if __name__ == "__main__":
-    main()
+    def filtrar_por_preferencias(self, group, gustos_persona):
+        group_filtrado = [
+            restaurante
+            for restaurante in group
+            if any(gusto in restaurante["categorias"] for gusto in gustos_persona)
+        ]
+        return group_filtrado
