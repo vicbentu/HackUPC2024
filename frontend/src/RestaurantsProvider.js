@@ -1,5 +1,5 @@
 import axios from 'axios'
-const baseUrl = 'http://localhost:5000'
+const baseUrl = 'http://backend:5000'
 
 
 const getAllGustos = () => {
@@ -12,5 +12,7 @@ const getSchedule = (city, depDate, retDate) => {
     return request.then(response => response.data); // Outputs the JSON response from the server)
 }
 
+
+// export default {getAllGustos, getSchedule}
 export default {getAllGustos, getSchedule}
 
