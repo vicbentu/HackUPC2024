@@ -12,7 +12,7 @@ function App() {
       <header className="App-header">
         <Navbar />
         <VisitForm setPlans={setPlans_}/>
-        <Plan plans={plans_}/>
+        <Plan plans={plans_} setPlans={setPlans_}/>
       </header>
     </div>
   );

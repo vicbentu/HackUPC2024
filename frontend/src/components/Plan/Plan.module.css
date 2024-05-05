@@ -1,4 +1,6 @@
 /* Plan.css */
+@import "../../vars.css";
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
 
 .planContainer {
     display: flex;
@@ -30,6 +32,47 @@
 
   }
 
+
+.planContainer label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.planContainer input[type="text"], .planContainer input[type="date"] {
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+ 
+}
+
+.planContainer input[type="text"]:focus, .planContainer input[type="date"]:focus {
+  /* Estilos para los campos de entrada cuando están enfocados */
+  border-color: #4CAF50;
+}
+
+.planContainer button {
+    background-color: #ff3c47d9;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+
+}
+
+.planContainer button:hover {
+  background-color: #ff3c47d8;
+}
   
   .title {
     margin-bottom: 5px;
