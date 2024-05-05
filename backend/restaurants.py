@@ -12,7 +12,7 @@ class Restaurants:
 
     def getRestaurantsInCity(self, city):
         return [
-            restaurant["restaurant ID"]
+            restaurant["name"]
             for restaurant in self.restaurants
             if restaurant["city"]["name"] == city
         ]

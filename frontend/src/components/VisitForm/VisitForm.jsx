@@ -3,12 +3,17 @@ import styles from './VisitForm.module.css';
 import RestaurantsProvider from '../../RestaurantsProvider.js';
 import GustosButton from './GustosButton'; // Importa el componente GustosButton
 
-function VisitForm() {
+function VisitForm({setPlans}) {
   const [city, setCity] = useState('');
   const [depDate, setDepDate] = useState('');
   const [retDate, setRetDate] = useState('');
   const [errors, setErrors] = useState({});
   const [gustos, setGustos] = useState([]);
+
+	const isDictEmpty = (dict) => {
+		for (var i in dict) return false
+		return true
+	}
 
   useEffect(() => {
     RestaurantsProvider.getAllGustos()
@@ -27,7 +32,15 @@ function VisitForm() {
 
     if (!depDate || !retDate) {
       formErrors.date = "Date is required";
-    }
+    } else if (depDate > retDate)
+			formErrors.date = "Date range must be coherent"
+
+		if (isDictEmpty(formErrors)) 
+			RestaurantsProvider.getSchedule(city, depDate, retDate)
+			.then(data => setPlans(data))
+			.catch(error => console.log(error))
+
+		
 
     setErrors(formErrors);
   };

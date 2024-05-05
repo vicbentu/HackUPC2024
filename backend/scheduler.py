@@ -25,6 +25,12 @@ class Scheduler:
             restaurants_in_city = self.restaurants.getRestaurantsInCity(city)
             if restaurants_in_city and group:  # Comprueba si la lista no está vacía
                 restaurant = random.choice(restaurants_in_city)
-                ret.append({"date": date, "group": group, "restaurant": restaurant})
+                ret.append(
+                    {
+                        "date": date.strftime("%Y-%m-%d"),
+                        "group": group,
+                        "restaurant": restaurant,
+                    }
+                )
             date += td
         return ret
